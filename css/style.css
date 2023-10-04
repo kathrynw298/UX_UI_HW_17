@@ -7,8 +7,8 @@
 }
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    /*background-color: #ddd;
+    color: black;*/
 }
   
 .topnav a.split {
@@ -21,7 +21,8 @@
     height: 50px;
     float: left;
 }
-.buttonstandard {
+
+button {
     background-color: #FE5D26;
     color: white;
     padding: 8px 16px;
@@ -32,7 +33,11 @@
     font-weight: 600px;
     text-decoration: none;
 }
-  
+
+.buttonstandard {
+    float: right;
+}
+
 .topnav a {
     float: right;
     color: white;
@@ -43,7 +48,7 @@
     font-weight: 500px;
     text-decoration: none;
     padding: 14px 20px;
-  }
+}
   
 .pagetitle {
     display: flex;
@@ -72,14 +77,24 @@
 }
 
 .biostatement {
-    font-size: 25px;
+    font-size: 24px;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
+    margin-top:10px;
 }
+
+.checkoutmywork {
+    margin-top:40px;
+    margin-bottom:0px;
+    font-weight:500;
+    font-size: 20px;
+}
+
 .row {
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom: 100px;
+    margin-top: 40px;
 }
 .g-4 {
     --bs-gutter-y:40px;
@@ -95,6 +110,8 @@
 }
 .card-body {
     padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 .card-title {
     padding-top: 0px;
@@ -106,24 +123,23 @@
 }
 
 .card-text {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Karla', sans-serif;
     font-weight: 300;
     margin: 6px 0px 6px 0px;
     line-height: 18px;
 }
 .card-footer {
-    padding: 16px;
     color: transparent;
     background-color: transparent;
     border: none;
-    padding-top:4px;
-    padding-left: 16px;
-    padding-bottom: 16px;
+    padding-top:10px;
+    padding-left: 24px;
+    padding-bottom: 24px;
 }
 .btn-primary {
-    background-color: #FE5D26;
-    color: white;
+    background-color: #EDE38C;
+    color: black;
     padding: 6px 12px;
     border-radius: 0px;
     border: 0px;
@@ -132,6 +148,12 @@
     font-style: italic;
     font-weight: 600px;
     text-decoration: none;
+    --bs-btn-bg: #FE5D26;
+    --bs-btn-border-color: #FE5D26;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #FE5D26;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #FE5D26;
 }
 
 footer {
@@ -161,4 +183,6 @@ footer .row {
 }
 .footertabs {
     text-align: right;
+    text-decoration: none;
+    color:black;
 }
