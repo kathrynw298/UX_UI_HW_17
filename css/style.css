@@ -1,4 +1,17 @@
+.container-fluid  {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.row{
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+}
+
+.bg-orange {
+    background-color: #FE5D26;
+
+}
 
 .topnav {
     overflow: hidden;
@@ -43,16 +56,6 @@ button {
     padding: 14px 20px;
 }
 
-
-.pagetitle {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-    margin-right: 100px;
-    margin-bottom: 30px;
-    margin-left: 100px
-}
-
 .pagetitle h2 {
     color:black; 
     margin: 2px 0px;
@@ -61,7 +64,7 @@ button {
     font-weight: 600;
 }
 
-.pagetitle h1 { 
+h5 { 
     color: #FE5D26;
     margin:0px;
     font-family: 'Fraunces', serif;
@@ -70,7 +73,7 @@ button {
     font-size: 70px;
 }
 
-.biostatement {
+h4 {
     font-size: 24px;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
@@ -89,10 +92,6 @@ button {
     text-decoration-thickness: 4px;
 }
 
-.g-4 {
-    --bs-gutter-y:40px;
-    --bs-gutter-x:40px;
-}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: left;
@@ -178,4 +177,11 @@ footer .row {
     text-align: right;
     text-decoration: none;
     color:black;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 25px;
+    }
 }
