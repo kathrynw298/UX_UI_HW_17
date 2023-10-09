@@ -1,12 +1,47 @@
+
+p {
+    color:black; 
+    margin: 2px 0px;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+h1 {
+    font-size: 75px;
+    font-family: 'Karla', sans-serif;
+    font-style: italic;
+    font-weight: 600px; 
+}
+
 h2 {
     color:black; 
     margin: 2px 0px;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Karla', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
+    padding-bottom: 40px;
+    font-style:italic;
+}
+
+h4 {
+    font-size: 30px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 40px;
 }
 
 h5 { 
+    margin:0px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+h6 {
     color: #FE5D26;
     margin:0px;
     font-family: 'Fraunces', serif;
@@ -15,11 +50,17 @@ h5 {
     font-size: 70px;
 }
 
-h4 {
-    font-size: 24px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
-    margin-top: 10px;
+.jumbotron {
+    background: url('../images/elevate_header.png') no-repeat top;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 0 !important;
+	border-bottom: 3px solid #0E0E0E;
+}
+
+body {
+    position: relative;
+    color: #0E0E0E;
 }
 
 * {box-sizing: border-box;}
@@ -27,6 +68,7 @@ h4 {
 .container-fluid  {
     padding-top: 100px;
     padding-bottom: 100px;
+    max-width: 1200px !important;
 }
 
 .row{
@@ -63,6 +105,7 @@ button {
     font-style: italic;
     font-weight: 600px;
     text-decoration: none;
+    border-radius: 2px;
 }
 
 .buttonstandard {
@@ -96,31 +139,36 @@ button {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
   
-  .flex-item-left {
-    padding: 10px;
-    padding-right: 80px;
-    flex: 70%;
-  }
-  
-  .flex-item-right {
-    flex: 30%;
-  }
+.flex-item-left {
+    flex: 1;
+    max-width: 30%;
+    margin-right: 70px;
+}
+
+.flex-item-right {
+    flex: 2;
+    margin-left:0px;
+    max-width: 70%;
+}
   
 #skill1, #skill2, #skill3 {
     width: 33.33%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-  /* Responsive layout - makes a one column-layout instead of a two-column layout 
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout 
   @media (max-width: 800px) {
     .flex-item-right, .flex-item-left {
       flex: 100%;
     }
-  }*/
+}*/
 
 .prof_pic {
     border-radius: 10px;
@@ -168,7 +216,7 @@ button {
     background-color: #EDE38C;
     color: black;
     padding: 6px 12px;
-    border-radius: 0px;
+    border-radius: 2px;
     border: 0px;
     font-size: 18px;
     font-family: 'Karla', sans-serif;
@@ -219,4 +267,54 @@ footer .row {
       text-align: center;
       margin: 25px 25px;
     }
+}
+
+/* Project page */
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+}
+
+#navbar-left {
+    background-color: transparent;
+    padding: 0px;
+}
+
+.navbar a {
+    color: #0E0E0E;
+    padding: 0px;
+}
+
+#overview {
+    margin-bottom: 60px;
+}
+.subgroup-left-side {
+    padding-right:60px;
+}
+
+.subgroup-right-side {
+    padding-right:60px;
+}
+
+.full-bleed {
+    box-shadow: 0 0 0 100vmax #FFFCE4;
+    clip-path: inset(0 -100vmax);
+}
+
+.inverse {
+    background-color: #FFFCE4;
+}
+
+.project-image {
+    max-width: 100%; /* Adjust this value as needed */
+    height: auto;
+    margin-top: 40px;
+    border: .5px solid #D3D3D3;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+}
+
+.media {
+    margin-bottom: 70px;
 }
