@@ -1,6 +1,32 @@
+h2 {
+    color:black; 
+    margin: 2px 0px;
+    font-size: 50px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+}
+
+h5 { 
+    color: #FE5D26;
+    margin:0px;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 70px;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+* {box-sizing: border-box;}
+
 .container-fluid  {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .row{
@@ -10,7 +36,6 @@
 
 .bg-orange {
     background-color: #FE5D26;
-
 }
 
 .topnav {
@@ -56,31 +81,7 @@ button {
     padding: 14px 20px;
 }
 
-.pagetitle h2 {
-    color:black; 
-    margin: 2px 0px;
-    font-size: 50px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 600;
-}
-
-h5 { 
-    color: #FE5D26;
-    margin:0px;
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 70px;
-}
-
-h4 {
-    font-size: 24px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
-    margin-top: 10px;
-}
-
-.checkoutmywork {
+.sptext {
     margin-top:40px;
     margin-bottom:0px;
     font-weight:500;
@@ -90,6 +91,40 @@ h4 {
     text-decoration: underline;
     text-decoration-color: #EDE38C;;
     text-decoration-thickness: 4px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .flex-item-left {
+    padding: 10px;
+    padding-right: 80px;
+    flex: 70%;
+  }
+  
+  .flex-item-right {
+    flex: 30%;
+  }
+  
+#skill1, #skill2, #skill3 {
+    width: 33.33%;
+}
+
+  /* Responsive layout - makes a one column-layout instead of a two-column layout 
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }*/
+
+.prof_pic {
+    border-radius: 10px;
+    max-width: 300px;
 }
 
 .card {
@@ -140,12 +175,12 @@ h4 {
     font-style: italic;
     font-weight: 600px;
     text-decoration: none;
-    --bs-btn-bg: #FE5D26;
-    --bs-btn-border-color: #FE5D26;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #FE5D26;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #FE5D26;
+    --bs-btn-bg: #E0CD25;
+    --bs-btn-border-color: #E0CD25;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: #E0CD25;
+    --bs-btn-active-color: black;
+    --bs-btn-active-bg: #E0CD25;
 }
 
 footer {
