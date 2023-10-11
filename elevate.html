@@ -3,6 +3,8 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
      <!--Karla Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +15,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <title>Elevate Guatemala Case Study</title>
+
+<script>
+window.addEventListener('scroll', function() {
+    var jumbotron = document.querySelector('.jumbotron');
+    var navbarLeft = document.querySelector('#navbar-left');
+    var containerFluid = document.querySelector('.container-fluid');
+    var jumbotronHeight = jumbotron.offsetHeight;
+
+    if (window.pageYOffset > jumbotronHeight) {
+        navbarLeft.style.position = 'fixed';
+        navbarLeft.style.top = '0';
+        containerFluid.style.marginTop = navbarLeft.offsetHeight + 'px';
+    } else {
+        navbarLeft.style.position = 'absolute';
+        containerFluid.style.marginTop = '0';
+    }
+});
+</script>
+
 </head>
 
 
@@ -32,29 +53,46 @@
     
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs"  >
-            <nav id="navbar-left" class="navbar navbar-light flex-column align-items-stretch">
-                    <a class="navbar-brand" href="#">Navbar</a>
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <nav id="navbar-left" class="navbar navbar-light flex-column align-items-stretch sticky-navbar">
+                    <a class="navbar-brand" href="#"></a>
                     <nav class="nav nav-pills flex-column">
-                        <a class="nav-link" href="#item-1">Research</a>
+                        <a class="nav-link" href="#overview" style="font-size: 18px; font-weight: 400; padding-top:10px;">Overview</a>
                         <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ms-3 my-1" href="#item-1-1">User Interviews</a>
-                            <a class="nav-link ms-3 my-1" href="#item-1-2">Research Questions</a>
-                            <a class="nav-link ms-3 my-1" href="#item-1-3">Affinity Diagrams</a>
-                            <a class="nav-link ms-3 my-1" href="#item-1-4">User Insights</a>
-                            <a class="nav-link ms-3 my-1" href="#item-1-5">User Persona</a>
-                            <a class="nav-link ms-3 my-1" href="#item-1-6">User Journey Map</a>
-                            <a class="nav-link ms-3 my-1" href="#item-1-7">Competitor Analysis</a>
                         </nav>
-                        <a class="nav-link" href="#item-2">Design</a>
+                        <a class="nav-link" href="#research" style="font-size: 18px; font-weight: 400; padding-top:10px;">Research</a>
                         <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ms-3 my-1" href="#item-2-1">Brainstorming</a>
-                            <a class="nav-link ms-3 my-1" href="#item-2-2">Feature Prioritization</a>
-                            <a class="nav-link ms-3 my-1" href="#item-2-1">User Flows</a>
-                            <a class="nav-link ms-3 my-1" href="#item-2-2">Wireframe Sketches</a>
-                            <a class="nav-link ms-3 my-1" href="#item-2-1">Wireframes</a>
+                            <a class="nav-link ms-3 my-1" href="#research-1">Proto-Persona</a>
+                            <a class="nav-link ms-3 my-1" href="#research-2">Competitor Analysis</a>
+                            <a class="nav-link ms-3 my-1" href="#research-3">User Interviews</a>
+                            <a class="nav-link ms-3 my-1" href="#research-4">Stakeholder Interview</a>
+                            <a class="nav-link ms-3 my-1" href="#research-5">Website Annotations</a>
+                            <a class="nav-link ms-3 my-1" href="#research-6">Problem Statement</a>
+                            <a class="nav-link ms-3 my-1" href="##research-7">Key User Insights</a>
                         </nav>
-                        <a class="nav-link" href="#item-3">Test</a>
+                        <a class="nav-link" href="#definition" style="font-size: 18px; font-weight: 400; padding-top:10px;">Definition</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#definition-1">Key User Insights</a>
+                            <a class="nav-link ms-3 my-1" href="#definition-2">Affinity Diagram</a>
+                            <a class="nav-link ms-3 my-1" href="#definition-3">User Insight</a>
+                            <a class="nav-link ms-3 my-1" href="#definition-4">Problem Statement</a>
+                            <a class="nav-link ms-3 my-1" href="#definition-5">User Journey Map</a>
+                            <a class="nav-link ms-3 my-1" href="#definition-6">User Persona</a>
+                            <a class="nav-link ms-3 my-1" href="#definition-7">UX Hypothesis</a>
+                            <a class="nav-link ms-3 my-1" href="#definition-8">Value Proposition</a>
+                        </nav>
+                        <a class="nav-link" href="#item-3" style="font-size: 18px; font-weight: 400; padding-top:10px;">Ideate</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#ideate-1">Sketches</a>
+                            <a class="nav-link ms-3 my-1" href="#ideate-2">Site Map</a>
+                            <a class="nav-link ms-3 my-1" href="#ideate-3">User Flow</a>
+                        </nav>
+                        <a class="nav-link" href="#item-4" style="font-size: 18px; font-weight: 400; padding-top:10px;">Prototyping</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                        </nav>
+                        <a class="nav-link" href="#item-5" style="font-size: 18px; font-weight: 400; padding-top:10px;">Test</a>
                         <nav class="nav nav-pills flex-column">
                             <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
                             <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
@@ -63,60 +101,241 @@
             </nav>
         </div>
         <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content" style="padding: 0;">
-            <section id="overview">
-                <h1>ELEVATE GUATEMALA</h1>
-                <p>We conducted an expansive review, analysis, and redesign of the Elévate Guatemala website to make it a more effective tool for expanding awareness and donor response. These improvements will aid the nonprofit in achieving its goals of increasing access to education in underserved regions.
-                    </p>
-                    <div class="row">
-                        <div class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h4>THE PROBLEM</h4>
-                            <p>Elévate Guatemala’s website is sometimes difficult to navigate, and large amounts of text with no breaks make learning about the organization’s work challenging to digest.</p>
-                            <h4>THE SOLUTION</h4>
-                            <p>Redesign Elévate Guatemala’s website, focusing on ease of navigation and bite-sized information.</p>
+            <div  data-bs-spy="scroll" data-bs-target="#navbar-left" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0"></div>   
+                <section id="overview">
+                    <h1>ELEVATE GUATEMALA</h1>
+                    <p>We conducted an expansive review, analysis, and redesign of the Elévate Guatemala website to make it a more effective tool for expanding awareness and donor response. These improvements will aid the nonprofit in achieving its goals of increasing access to education in underserved regions.
+                        </p>
+                        <div class="row">
+                            <div class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <h4>THE PROBLEM</h4>
+                                <p>Elévate Guatemala’s website is sometimes difficult to navigate, and large amounts of text with no breaks make learning about the organization’s work challenging to digest.</p>
+                                <h4>THE SOLUTION</h4>
+                                <p>Redesign Elévate Guatemala’s website, focusing on ease of navigation and bite-sized information.</p>
+                            </div>
+                            <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">MY ROLE ETC</div>
                         </div>
-                        <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">MY ROLE ETC</div>
-                    </div>
-            </section>
-            <section id="research" class="inverse full-bleed">
-                <h2 style="padding-top:40px;">.01 RESEARCH <span> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 60 60" fill="none">
-                    <path d="M28.5 0.5L32.2344 21.2454L50.7822 11.2305L36.8912 27.0848L56.2854 35.3418L35.2292 34.3664L40.8657 54.6776L28.5 37.607L16.1343 54.6776L21.7708 34.3664L0.714554 35.3418L20.1088 27.0848L6.2178 11.2305L24.7656 21.2454L28.5 0.5Z" fill="#FE5D26"/>
-                  </svg> </span> </h2>
-                    <div class="row"  style="--bs-gutter-y:1.5 rem">
-                        <ul class="list-unstyled">
-                            <li class="media">
-                              <div class="media-body">
-                                <h4 class="mt-0 mb-1">PROTO-PERSONA</h4>
-                                <p>We began with a simple assumption of who would primarily be accessing the Elévate site and their motives for looking out for this information. The proto-persona gave us a template to ask questions and research to prove or disprove attributes.</p>
-                              </div>
-                              <img src="images/elevate_proto_persona.png" class="align-self-center mr-3 project-image" alt="elevate proto perso">
-                            </li>
-                            <li class="media">
-                                <div class="media-body">
-                                  <h4 class="mt-0 mb-1">COMPETITOR ANALYSIS</h4>
-                                  <p>Taking time out to research how other organizations operate gave us excellent context for the space in which these nonprofits exist. Looking at these sites analytically lets us see what worked and what was confusing.</p>
-                                </div>
-                                <img src="images/elevate_comp_analysis.png" class="align-self-center mr-3 project-image" alt="elevate competitor analysis">
-                            </li>
-                            <li class="media">
-                                <div class="media-body">
-                                  <h4 class="mt-0 mb-1">USER INTERVIEWS</h4>
-                                  <p>We began with a simple assumption of who would primarily be accessing the Elévate site and their motives for looking out for this information. The proto-persona gave us a template to ask questions and research to prove or disprove attributes.</p>
-                                </div>
-                                <img src="" class="align-self-center mr-3 project-image" alt="user interview quotes">
-                            </li>
-                        </ul>               
-                    </div>
                 </section>
+                <section id="research" class="inverse full-bleed">
+                    <h2 style="padding-top:40px;">.01 RESEARCH <span> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 60 60" fill="none">
+                        <path d="M28.5 0.5L32.2344 21.2454L50.7822 11.2305L36.8912 27.0848L56.2854 35.3418L35.2292 34.3664L40.8657 54.6776L28.5 37.607L16.1343 54.6776L21.7708 34.3664L0.714554 35.3418L20.1088 27.0848L6.2178 11.2305L24.7656 21.2454L28.5 0.5Z" fill="#FE5D26"/>
+                    </svg> </span> </h2>
+                        <div class="row"  style="--bs-gutter-y:1.5 rem">
+                            <ul class="list-unstyled">
+                                <li class="media">
+                                <div class="media-body" id="research-1">
+                                    <h4 class="mt-0 mb-1">PROTO-PERSONA</h4>
+                                    <p>We began with a simple assumption of who would primarily be accessing the Elévate site and their motives for looking out for this information. The proto-persona gave us a template to ask questions and research to prove or disprove attributes.</p>
+                                </div>
+                                <img src="images/elevate_proto_persona.png" class="align-self-center mr-3 project-image" alt="elevate proto perso">
+                                </li>
+                                <li class="media">
+                                    <div class="media-body" id="research-2">
+                                    <h4 class="mt-0 mb-1">COMPETITOR ANALYSIS</h4>
+                                    <p>Taking time out to research how other organizations operate gave us excellent context for the space in which these nonprofits exist. Looking at these sites analytically lets us see what worked and what was confusing.</p>
+                                    </div>
+                                    <img src="images/elevate_comp_analysis.png" class="align-self-center mr-3 project-image" alt="elevate competitor analysis">
+                                </li>
+                                <li class="media">
+                                    <div class="media-body" id="research-3">
+                                    <h4 class="mt-0 mb-1">USER INTERVIEWS</h4>
+                                    <p>We began with a simple assumption of who would primarily be accessing the Elévate site and their motives for looking out for this information. The proto-persona gave us a template to ask questions and research to prove or disprove attributes.</p>
+                                    </div>
+                                    <img src="" class="align-self-center mr-3 project-image" alt="user interview quotes">
+                                </li>
+                                <li class="media">
+                                    <div class="media-body" id="research-4">
+                                    <h4 class="mt-0 mb-1">STAKEHOLDER INTERVIEW</h4>
+                                    <p>Our initial contract with Elévate Guatemala stakeholder helped us identified the following key notes:</p>
+                                    </div>
+                                    <ul class="bullets">
+                                        <li>Elevate's mission goes beyond providing scholarships; it is dedicated to nurturing well-rounded individuals. </li>
+                                        <li>Concerns about website navigation and the navigation bar. Feels the site's content is outdated.</li>
+                                        <li>The stakeholders expressed a desire to improve the visibility of the newsletter and to improve the clarity of the volunteer section on the website.</li>
+                                    </ul>
+                                </li>
+                                <li class="media">
+                                    <div class="media-body" id="research-5">
+                                    <h4 class="mt-0 mb-1">WEBSITE ANNOTATIONS</h4>
+                                    <p>Our initial contract with Elévate Guatemala stakeholder helped us identified the following key notes:</p>
+                                    <br>
+                                    <div class="slideshow-container">
+
+                                        <div class="mySlides">
+                                        <img src="images/EG_Home.png" style="width:100%">
+                                        </div>
+                                        
+                                        <div class="mySlides">
+                                        <img src="images/EG_About_OurPrograms.png" style="width:100%">
+                                        </div>
+                                        
+                                        <div class="mySlides">
+                                        <img src="images/EG_Donate.png" style="width:100%">
+                                        </div>
+                                        
+                                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                        <a class="next" onclick="plusSlides(1)">❯</a>
+                                        
+                                    </div>
+
+                                        <br>
+                                        
+                                        <div style="text-align:center">
+                                        <span class="dot" onclick="currentSlide(1)"></span> 
+                                        <span class="dot" onclick="currentSlide(2)"></span> 
+                                        <span class="dot" onclick="currentSlide(3)"></span> 
+                                        </div>
+                                </li>
+                                
+                                <li class="media">
+                                    <div class="media-body" id="research-6">
+                                    <h4 class="mt-0 mb-1">PROBLEM STATEMENT</h4> 
+                                    <!--make this p stand out-->
+                                    <p>How might we redesign Elévate’s website to present Program and Scholarship information in a clear, easily digestible format that empowers passionate individuals interested in supporting education in developing nations, ultimately increasing user engagement confidence and driving more donations to the organization?</p>
+                                    </div>
+                                </li>
+                            </ul>               
+                        </div>
+                 </section>
+
+                <section id="definition">
+                    <h2 style="padding-top:40px;">.02 DEFINITION <span> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 60 60" fill="none">
+                        <path d="M28.5 0.5L32.2344 21.2454L50.7822 11.2305L36.8912 27.0848L56.2854 35.3418L35.2292 34.3664L40.8657 54.6776L28.5 37.607L16.1343 54.6776L21.7708 34.3664L0.714554 35.3418L20.1088 27.0848L6.2178 11.2305L24.7656 21.2454L28.5 0.5Z" fill="#FE5D26"/>
+                    </svg> </span> </h2>
+                        <div class="row"  style="--bs-gutter-y:1.5 rem">
+                            <ul class="list-unstyled">
+                                <li class="media">
+                                    <div class="media-body" id="definition-1">
+                                    <h4 class="mt-0 mb-1">KEY USER INSIGHTS</h4>
+                                    <p class="subhead">Initial Impression and Design</p>
+                                    <p>Users generally find the website visually appealing and user-friendly. They appreciate the simplicity and clarity. Most like the logo but mention that it might be too big, and they find the mission statement to the point.</p>
+                                    <br>
+                                    <p class="subhead">Navigation and Ease of Finding Information</p>
+                                    <p>Users find the navigation intuitive but need clarity to locate the critical sections, such as donation options, projects, and contact information, without difficulty.</p>
+                                    <br>
+                                    <p class="subhead">Engaging Features</p>
+                                    <p>Users particularly appreciate using a video as a hero image, which helps convey the mission. However, some users think the video is too long, suggesting a need for a shorter version or clear video navigation options.</p>
+                                </div>
+                                </li>
+                                <li class="media">
+                                    <div class="media-body" id="definition-2">
+                                        <h4 class="mt-0 mb-1">AFFINITY DIAGRAM</h4>
+                                        <p></p>
+                                    </div>
+                                        <img src="images/elevate_affinity_diagram.png" class="align-self-center mr-3 project-image" alt="elevate proto perso">
+                                </li>
+                                <li class="media">
+                                     <div class="media-body" id="definition-3">
+                                        <h4 class="mt-0 mb-1">USER INSIGHT</h4>
+                                        <p>The user must access Elévate’s Programs and Scholarships page to decide where and how to donate. Currently, users are confused by the website layout, limiting their engagement and willingness to contribute.</p>
+                                    </div>
+                                        <img src="images/elevate_affinity_diagram.png" class="align-self-center mr-3 project-image" alt="elevate proto perso">
+                                </li>
+                                <li class="media">
+                                    <div class="media-body" id="definition-4">
+                                            <h4 class="mt-0 mb-1">PROBLEM STATTEMENT</h4>
+                                            <p>How might we redesign Elévate’s website to present Program and Scholarship information in a clear, easily digestible format that empowers passionate individuals interested in supporting education in developing nations, ultimately increasing user engagement confidence and driving more donations to the organization?</p>
+                                    </div>
+                                        <img src="images/elevate_affinity_diagram.png" class="align-self-center mr-3 project-image" alt="elevate proto perso">
+                                 </li>
+                                <li class="media">
+                                    <div class="media-body" id="definition-5">
+                                        <h4 class="mt-0 mb-1">USER JOURNEY MAP</h4>
+                                        <p></p>
+                                        </div>
+                                        <img src="images/elevate_affinity_diagram.png" class="align-self-center mr-3 project-image" alt="elevate proto perso">
+                                </li>
+                                <li class="media">
+                                    <div class="media-body" id="definition-6">
+                                        <h4 class="mt-0 mb-1">USER PERSONA</h4>
+                                        <p>Gathering and defining these insights and viewing them through our problem statement allowed us to understand better who our user is, our User Persona.</p>
+                                    </div>
+                                    <img src="images/elevate_affinity_diagram.png" class="align-self-center mr-3 project-image" alt="elevate proto perso">
+                                </li>
+                                <li class="media">
+                                    <div class="media-body" id="definition-7">
+                                        <h4 class="mt-0 mb-1">UX HYPOTHESIS</h4>
+                                        <p>Updating our outdated website to enable the purchase of tangible goods and prominently featuring volunteer opportunities will enhance user engagement, increasing donations and volunteer sign-ups.</p>
+                                        </div>
+                                </li>
+                                <li class="media">
+                                    <div class="media-body" id="definition-8">
+                                        <h4 class="mt-0 mb-1">VALUE PROPOSITION</h4>
+                                        <p>Elévate Guatemala provides access to quality education, literacy programs, and diverse, enriching experiences, transforming young lives and opening doors to brighter futures. Your support creates opportunities and broadens horizons, helping us build a more educated, skilled, and empowered generation in Guatemala.</p>
+                                    </div>
+                                </li>
+                            </ul>                 
+                        </div>
+                    </section>
+
+                    <section id="ideate">
+                        <h2 style="padding-top:40px;">.03 IDEATE <span> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 60 60" fill="none">
+                            <path d="M28.5 0.5L32.2344 21.2454L50.7822 11.2305L36.8912 27.0848L56.2854 35.3418L35.2292 34.3664L40.8657 54.6776L28.5 37.607L16.1343 54.6776L21.7708 34.3664L0.714554 35.3418L20.1088 27.0848L6.2178 11.2305L24.7656 21.2454L28.5 0.5Z" fill="#FE5D26"/>
+                        </svg> </span> </h2>
+                            <div class="row"  style="--bs-gutter-y:1.5 rem">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <div class="media-body" id="ideate-1">
+                                        <h4 class="mt-0 mb-1">SKETCHES</h4>
+                                        <p class="subhead">Initial Impression and Design</p>
+                                        <p>Users generally find the website visually appealing and user-friendly. They appreciate the simplicity and clarity. Most like the logo but mention that it might be too big, and they find the mission statement to the point.</p>
+                                        <br>
+                                        <p class="subhead">Navigation and Ease of Finding Information</p>
+                                        <p>Users find the navigation intuitive but need clarity to locate the critical sections, such as donation options, projects, and contact information, without difficulty.</p>
+                                        <br>
+                                        <p class="subhead">Engaging Features</p>
+                                        <p>Users particularly appreciate using a video as a hero image, which helps convey the mission. However, some users think the video is too long, suggesting a need for a shorter version or clear video navigation options.</p>
+                                    </div>
+                                    </li>
+                                    <li class="media">
+                                        <div class="media-body" id="ideate-2">
+                                            <h4 class="mt-0 mb-1">CARD SORTING & SITE MAP</h4>
+                                            <p></p>
+                                        </div>
+                                            <img src="images/elevate_affinity_diagram.png" class="align-self-center mr-3 project-image" alt="elevate proto perso">
+                                    </li>
+                                    <li class="media">
+                                         <div class="media-body" id="ideate-3">
+                                            <h4 class="mt-0 mb-1">USER FLOW</h4>
+                                            <p>The user must access Elévate’s Programs and Scholarships page to decide where and how to donate. Currently, users are confused by the website layout, limiting their engagement and willingness to contribute.</p>
+                                        </div>
+                                            <img src="images/elevate_affinity_diagram.png" class="align-self-center mr-3 project-image" alt="elevate proto perso">
+                                    </li>
+                                </ul>                 
+                            </div>
+                    </section>
+                </div>
             </div>
         </div>
     </div>  
-
-                <!--<h4>PROTO-PERSONA</h4>
-                <p>We began with a simple assumption of who would primarily be accessing the Elévate site and their motives for looking out for this information. The proto-persona gave us a template to ask questions and research to prove or disprove attributes.</p>
-                <img src="images/elevate_proto_persona.png" alt="Elevate proto-persona" style="height:350px; width:auto; padding:0px; margin-left:10px;">
-                <h4>COMPETITOR ANALYSIS</h4>
-                <p>Taking time out to research how other organizations operate gave us excellent context for the space in which these nonprofits exist. Looking at these sites analytically lets us see what worked and what was confusing.</p>
-                <img src="images/elevate_comp_analysis.png" alt="Elevate competitor analysis" style="height:350px; width:auto; padding:0px;"> -->
-
 </body>
 </html>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
