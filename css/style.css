@@ -1,11 +1,17 @@
 
+body {
+    position: relative;
+}
+
 p {
     color:black; 
     margin: 2px 0px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Karla', sans-serif;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 23px;
+    padding-bottom: 5px;
+    padding-top:5px;
 }
 
 .subhead {
@@ -16,8 +22,6 @@ p {
     font-weight: 500;
     line-height: 40px; 
 }
-
-
 
 h1 {
     font-size: 75px;
@@ -32,7 +36,6 @@ h2 {
     font-size: 60px;
     font-family: 'Karla', sans-serif;
     font-weight: 500;
-    padding-bottom: 40px;
     font-style:italic;
 }
 
@@ -41,7 +44,7 @@ h3 {
     font-family: 'Karla', sans-serif;
     font-weight: 500;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     line-height: 50px; 
 }
 
@@ -50,7 +53,7 @@ h4 {
     font-family: 'Karla', sans-serif;
     font-weight: 500;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     line-height: 50px;
 }
 
@@ -68,6 +71,16 @@ h6 {
     font-style: italic;
     font-weight: 300;
     font-size: 70px;
+}
+
+.inline_link {
+    color:black; 
+    margin: 2px 0px;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    text-decoration: underline;
 }
 
 .jumbotron {
@@ -93,8 +106,8 @@ body {
 }
 
 .row{
-    --bs-gutter-x: 3rem;
-    --bs-gutter-y: 3rem;
+    --bs-gutter-x: 3rem !important;
+    --bs-gutter-y: 3rem !important;
 }
 
 
@@ -304,80 +317,118 @@ footer .row {
     --bs-gutter-y: 1.5rem;
 }
 
-#navbar-left {
-    background-color: transparent;
-    padding: 0px;
-}
-
-.navbar a {
-    color: #3a3b3c;
-    padding: 0px;
-    margin: 2px 0px;
+.nav-link {
+    color:black !important; 
     font-size: 14px;
     font-family: 'Karla', sans-serif;
-    font-weight: 300;
-    line-height: 18px;;
+    font-weight: 400;
+    line-height: 0px;
 }
 
-.sticky-navbar {
+.nav-link.active {
+    color:#FE5D26 !important;
+    background-color: transparent;
+}
+
+.nav-link:hover {
+    color:#FE5D26 !important;
+    background-color: transparent;
+}
+
+#sidemenu.affix-bottom {
+    position: relative;
+}
+  
+@media (min-width: 768px) {
+    #sidemenu.affix {
     position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+    top: 40px;
+    }
+}
+
+.media-body {
+    padding-top:20px;
+}
+
+/* only show subitems when parent is active*/
+#sidemenu .nav-item .nav-link.active+.nav .nav-item {
+    display: list-item;
 }
 
 #overview {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 .subgroup-left-side {
     padding-right:60px;
 }
 
-.subgroup-right-side {
-    padding-right:60px;
+.subgroup-right-side p {
+    color:black;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    line-height: 18px;
 }
 
 .project-image {
-    max-width: 100%; /* Adjust this value as needed */
+    max-width: 100%; 
     height: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     border: .5px solid #D3D3D3;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
 }
 
-.media {
-    margin-bottom: 70px;
+.wireframe-image {
+    max-width: 150px; 
+    height: auto;
+    margin-top: 20px;
+    border: .5px solid #D3D3D3;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
 }
 
+.media {
+    margin-bottom: 50px;
+}
 
 #research.full-bleed {
     box-shadow: 0 0 0 100vmax #FFFCE4;
     clip-path: inset(0 -100vmax);
 }
 
-#research.inverse {
+#research, #ideate{
     background-color: #FFFCE4;
 }
 
 .bullets {
     display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: .5em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-inline-start: 30px;
 }
 
 .bullets li {
-    padding-left:10px;
+    padding-left:5px;
     color:black; 
     margin: 2px 0px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Karla', sans-serif;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 22px;
+    color:black; 
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: start; 
+    margin-bottom: 20px; 
 }
 
 /* Slideshow container */
@@ -393,20 +444,45 @@ footer .row {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
     margin-top: -22px;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 100px;
     user-select: none;
-  }
-  
+    background-color: grey;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mySlides li{
+    color:black; 
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 10px 0px;
+    padding-left: 5px;
+}
+
+.mySlides ol {
+    padding: 0px 30px 20px 30px;
+    margin-left: 30px;
+}
+
   /* Position the "next button" to the right */
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    margin-right:10px;
+    padding: 3px 12px 3px 12px;
+  }
+
+  .prev {
+    margin-left:10px;
+    padding: 3px 12px 3px 12px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -439,4 +515,50 @@ footer .row {
   
   .active, .dot:hover {
     background-color: #717171;
+  }
+
+  /*Wireframe Gallery*/
+
+  #wireframe_gallery.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    max-height: 2000px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column{
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    overflow: hidden;
+    max-height: 1750px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
   }
