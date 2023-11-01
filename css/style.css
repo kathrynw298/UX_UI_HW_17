@@ -24,7 +24,7 @@ p {
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 60px;
     font-family: 'Karla', sans-serif;
     font-style: italic;
     font-weight: 600px; 
@@ -32,15 +32,15 @@ h1 {
 
 h2 {
     color:black; 
-    margin: 2px 0px;
-    font-size: 60px;
+    margin: 0px 0px;
+    font-size: 45px;
     font-family: 'Karla', sans-serif;
     font-weight: 500;
     font-style:italic;
 }
 
 h3 {
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'Karla', sans-serif;
     font-weight: 500;
     margin-top: 10px;
@@ -49,11 +49,11 @@ h3 {
 }
 
 h4 {
-    font-size: 36px;
+    font-size: 34px;
     font-family: 'Karla', sans-serif;
     font-weight: 500;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     line-height: 50px;
 }
 
@@ -61,7 +61,7 @@ h5 {
     margin:0px;
     font-family: 'Karla', sans-serif;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 h6 {
@@ -83,7 +83,7 @@ h6 {
     text-decoration: underline;
 }
 
-.jumbotron {
+#elevate_jumbotron {
     background: url('../images/elevate_header.png') no-repeat top;
     background-size: cover;
     height: 500px;
@@ -91,8 +91,16 @@ h6 {
 	border-bottom: 3px solid #0E0E0E;
 }
 
+#fauaf_jumbotron {
+    background: url('../images/FAUAF/FAUAF_header.png') no-repeat top;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 0 !important;
+	border-bottom: 3px solid #0E0E0E;
+}
+
 body {
-    position: relative;
+    position: relativ e;
     color: #0E0E0E;
 }
 
@@ -100,7 +108,7 @@ body {
 
 .container-fluid  {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     max-width: 1200px !important;
     margin-top:0px !important;
 }
@@ -122,9 +130,40 @@ body {
 
 
 .topnav {
-    overflow: hidden;
     background-color: #333;
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav-items li {
+    margin: 0 10px;
+}
+
+.topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Karla', sans-serif;
+    font-style: italic;
+    font-weight: 500px;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.dropdown-toggle::after {
+    margin-left: .5em !important;
+    vertical-align: 0.2em !important;
 }
   
 .topnav a.split {
@@ -133,7 +172,6 @@ body {
 .topnav a.split:hover {
     background-color: #333;
 }
-
 button {
     background-color: #FE5D26;
     color: white;
@@ -149,21 +187,47 @@ button {
     border-radius: 2px;
 }
 
+.btn-dropdown {
+    color: black;
+    padding: 6px 12px;
+    border-radius: 2px;
+    border: 0px;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-style: italic;
+    font-weight: 600px;
+    text-decoration: none;
+    --bs-btn-hover-color: white;
+    --bs-btn-active-color: white;
+}
+
+.dropdown li a{
+    color: black;
+    text-align: start;
+    padding: 6px 12px;
+    border-radius: 2px;
+    border: 0px;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-style: italic;
+    font-weight: 600px;
+    text-decoration: none;
+}
+
+#nav-title a {
+    color: white;
+    margin:0px;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;
+}
+
 .buttonstandard {
     float: right;
 }
 
-.topnav a {
-    float: right;
-    color: white;
-    text-align: center;
-    font-size: 22px;
-    font-family: 'Karla', sans-serif;
-    font-style: italic;
-    font-weight: 500px;
-    text-decoration: none;
-    padding: 14px 20px;
-}
+
 
 .sptext {
     margin-top:40px;
@@ -283,7 +347,6 @@ footer .row {
 .footercontact h6{
     text-align: left;
     color: black;
-    margin:0px;
     font-family: 'Fraunces', serif;
     font-style: italic;
     font-weight: 300;
@@ -313,21 +376,21 @@ footer .row {
 /* Project page */
 
 .row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 1.5rem;
+
 }
 
 .nav-link {
-    color:black !important; 
-    font-size: 14px;
+    color:#414141 !important; 
+    font-size: 16px;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
-    line-height: 0px;
+    line-height: 5px;
 }
 
 .nav-link.active {
     color:#FE5D26 !important;
     background-color: transparent;
+    border-left: 2px #FE5D26 solid;
 }
 
 .nav-link:hover {
@@ -355,8 +418,20 @@ footer .row {
     display: list-item;
 }
 
-#overview {
-    margin-bottom: 100px;
+/* Initially hide all subitem lists */
+.nav.flex-md-column.ml-2.hidden-sm-down {
+    display: none;
+}
+
+/* Display subitem list when the parent is active */
+.nav-link.active + ul.nav.flex-md-column.ml-2.hidden-sm-down {
+    display: block;
+}
+
+.project_head {
+    margin-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .subgroup-left-side {
     padding-right:60px;
@@ -367,7 +442,7 @@ footer .row {
     font-size: 14px;
     font-family: 'Karla', sans-serif;
     font-weight: 300;
-    line-height: 18px;
+    line-height: 12px;
 }
 
 .project-image {
@@ -396,7 +471,7 @@ footer .row {
     clip-path: inset(0 -100vmax);
 }
 
-#research, #ideate{
+#research, #ideate, #test{
     background-color: #FFFCE4;
 }
 
@@ -524,8 +599,7 @@ a {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 0 4px;
-    max-height: 2000px;
+    padding: 10px 20px;
   }
   
   /* Create four equal columns that sits next to each other */
@@ -535,7 +609,7 @@ a {
     max-width: 25%;
     padding: 0 4px;
     overflow: hidden;
-    max-height: 1750px;
+    max-height: 1670px;
   }
   
   .column img {
@@ -543,9 +617,9 @@ a {
     vertical-align: middle;
     width: 100%;
     object-fit: cover;
-  }
+}
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .column {
       -ms-flex: 50%;
@@ -562,3 +636,87 @@ a {
       max-width: 100%;
     }
   }
+
+/* Infographics Page */
+
+.infographic {
+    border: .5px solid #D3D3D3;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px; 
+    vertical-align: middle;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* FAUAF Page */
+
+.accordion li {
+    color:black; 
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    line-height: 18px;
+    margin: 10px 0px;
+    padding-left: 5px;
+}
+
+.accordion{
+    --bs-accordion-active-bg: #C3E9EE;
+    --bs-accordion-btn-color: black;
+    --bs-accordion-active-color: black;
+}
+
+.carousel-indicators {
+    position: unset;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+}
+
+.carousel-indicators button{
+    border-radius: 0;
+    border-top: 0px !important;
+    font-size: 16px;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    text-indent: 0;
+    text-align: left;
+    width: 200px;
+    height: 60%;
+    opacity: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-indicators [data-bs-target].active {
+    color: #FE5D26;
+}
+
+.carousel {
+    align-items: flex-start; /* Align items at the top */
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.carousel-inner img {
+    max-width: 700px !important;
+    height: auto !important;
+    padding-left: 20px;
+    background-color: transparent;
+}
+
+.carousel-inner .carousel-item {
+    background-color: transparent; /* Set the background color of carousel items to transparent */
+}

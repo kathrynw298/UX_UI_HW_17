@@ -39,7 +39,7 @@ function showSlides(n) {
 
 $('#sidemenu').affix({
   offset:{
-      top: $('#header').outerHeight() - 20,
+      top: $('#header').outerHeight() +30,
       bottom: $('footer').outerHeight() + 50
   }
 });
